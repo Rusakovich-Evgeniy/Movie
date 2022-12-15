@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="header__content">
+        <a href="../index.html" class="header__logo">MovieApp</a>
+        <!--  -->
+        <ul class="nav">
+            <li><a href="../index.html"> Главная</a></li>
+            <li><a href="#"> Смотреть онлайн</a></li>
+            <li><a href="../page/page2.html"> Контакты</a></li>
+        </ul>
+        <button id="myBtn">Оформить подписку</button>
+
+        <div id="myModal" class="mod">
+            <div class="mod-content">
+                <span class="close">&times;</span>
+                <p class="p-mod">В данный момент подписка не доступна</p>
+            </div>
+        </div>
+        <form>
+          <input type="text" class="header__search" placeholder="Поиск" />
+        </form>
+      </div>
+      <div class="main">
+
+        <h1>Фильмы смотреть онлайн</h1>
+
+                <h3> Вы можете смотреть фильмы онлайн в хорошем качестве на нашем сайте и наслаждаться просмотром! В нашем онлайн-кинотеатре каждый найдет кинофильмы    разнообразных жанров. Вы легко сможете выбрать и посмотреть кино благодаря каталогу фильмов. Популярные исторические драмы, семейные и военные фильмы, любимые киноленты любых жанров, — смотреть бесплатные фильмы вы можете в режиме онлайн. Вниманию любителей кино доступны интересные и популярные герои. Бесплатный онлайн кинотеатр высокого качества доступен в любое время. Любимые актеры, интересные сюжеты и качественные картины ждут зрителей.<br>
+                Пользователь найдет бесплатные мировые киноленты разных жанров: современные боевики, документальные видео, музыкальные комедии и фантастические ужасы. Вам интересны новинки кино? Мы предлагаем пользователям отличный список новых фильмов. Для поклонников советского кино предлагаем широкий выбор коллекций самых лучших шедевров советских кинолент. Посмотреть хороший фильм бесплатно онлайн: настоящую французскую комедию, увлекательный триллер или индийскую мелодраму позволят различные категории каталога фильмов. Начать просмотр фильмов онлайн бесплатно поможет удобный поиск! Фильмы онлайн бесплатно смотреть в хорошем качестве вы можете уже сейчас на нашем сайте.
+                Фильмы 2018, 2019 и 2020 представлены уникальной подборкой.<br> Множество русских режиссеров предлагают последние премьеры. Бесплатный доступ к огромной коллекции фильмов онлайн сделает просмотр приятным. Насладиться разделом известных зарубежных кинолент, художественными российскими картинами и удивительными событиями смогут все посетители сайта!</h3>
+      </div>
+    </header>
+    <div class="container">
+      <div class="movies"></div>
+      <div class="modal"></div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="cont">
+                <p> Адрес 117105, Москва, Варшавское ш., 9, стр. 1</p>
+                <p> Мы работаем с 08:00 до 21:00 без выходных</p>
+            </div>
+            <div class="contacts">
+                <h3>Контакты</h3>
+                <p>+7 (495)<span>941-64-00</span></p>
+                <p>info@mail.ru</p>
+            </div>
+  
+        </div>
+      </footer>
+    <script>
+          let mod = document.getElementById('myModal');
+          btn = document.getElementById('myBtn');
+          span = document.getElementsByClassName('close')[0];
+
+          btn.onclick = function () {
+              mod.style.display = 'block';
+          }
+
+          span.onclick = function() {
+              mod.style.display = 'none';
+          }
+    </script>
+  </body>
+</html>
